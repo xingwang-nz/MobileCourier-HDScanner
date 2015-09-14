@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ImageButton">
+        <attr name="image_button_icon" format="reference" />
+        <attr name="image_button_text" format="string" />
+    </declare-styleable>
+
+</resources>

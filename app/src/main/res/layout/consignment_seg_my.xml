@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_no_my_consignment"
+        style="@style/content_no_data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/consignment_my_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <ExpandableListView
+            android:id="@+id/my_consignment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/consignment_my_footer"
+        style="@style/bottom_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:id="@+id/bnt_scan_consignments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:image_button_icon="@drawable/ic_barcode_scanner"
+            custom:image_button_text="@string/label_scan" />
+        -->
+
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:id="@+id/bnt_load_consignments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:image_button_icon="@drawable/ic_load_truck"
+            custom:image_button_text="@string/label_load" />
+
+        <!-- Decline button -->
+
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:id="@+id/bnt_decline_consignments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:image_button_icon="@drawable/ic_decline"
+            custom:image_button_text="@string/label_decline" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_product_desc"
+        style="@style/content_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model No: " />
+
+            <TextView
+                android:id="@+id/text_product_code"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty: " />
+
+            <TextView
+                android:id="@+id/text_product_quantity"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial No:  " />
+
+            <TextView
+                android:id="@+id/text_product_serial_no"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pack Size: " />
+
+            <TextView
+                android:id="@+id/text_product_pack_size"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/container_horizontal_padding"
+        android:paddingRight="@dimen/container_horizontal_padding" >
+
+        <TextView
+            android:id="@+id/text_no_return_consignment"
+            style="@style/content_no_data_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/content_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/return_consignment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true" />
+
+                <include layout="@layout/separator" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/content_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_notes" />
+
+                    <EditText
+                        android:id="@+id/input_consignment_return_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:maxLength="99" >
+                    </EditText>
+                </LinearLayout>
+
+                <include layout="@layout/separator" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/content_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_print_name" />
+
+                    <EditText
+                        android:id="@+id/input_consignment_delivery_print_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20" 
+                        android:inputType="text">
+                    </EditText>
+                </LinearLayout>
+
+                <include layout="@layout/separator" />
+
+                <ImageView
+                    android:id="@+id/img_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_signature" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_button_bar"
+        style="@style/bottom_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:id="@+id/bnt_consignment_return"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:image_button_icon="@drawable/ic_return_2"
+            custom:image_button_text="@string/label_return" />
+    </LinearLayout>
+
+</LinearLayout>

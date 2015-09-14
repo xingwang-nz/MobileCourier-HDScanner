@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/container_horizontal_padding"
+    android:paddingRight="2dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/text_delivery_consignment_no"
+            style="@style/content_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="" />
+
+        <Switch
+            android:id="@+id/switch_consignment_accept_reject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:checked="true"
+            android:text=""
+            android:textOff="Reject"
+            android:textOn="Accept" />
+
+        <CheckBox
+            android:id="@+id/checkbox_consignment_delivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

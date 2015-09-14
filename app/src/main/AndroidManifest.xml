@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nz.co.guruservices.mobilecourier"
+    android:versionCode="3"
+    android:versionName="3.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <permission
+        android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- permissions for phone call and read sate -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="nz.co.guruservices.mobilecourier.common.app.ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="nz.co.guruservices.mobilecourier.login.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_register"
+            android:label="@string/label_login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_home"
+            android:label="@string/label_home"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".consignment.ConsignmentActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="@string/label_consignments"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".consignment.ConsignmentDetailActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="@string/label_consignment_detail"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".consignment.ConsignmentNoteActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="@string/label_consignment_note"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".deliver.DeliverActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="@string/label_deliver"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".deliver.RouteActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="@string/label_deliver">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".deliver.DeliverOperationActivity"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="@string/label_deliver_consignee"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="nz.co.guruservices.mobilecourier.signature.CaptureSignatureActivity"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="Signature"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".returns.ReturnsActivity"
+            android:icon="@drawable/ic_arrow_back"
+            android:label="@string/label_return"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".abouthelp.AboutActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_cross"
+            android:label="@string/label_about"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".abouthelp.HelpActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_cross"
+            android:label="@string/label_help"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:icon="@drawable/ic_cross"
+            android:label="@string/label_setting"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Goolge API Debug Key -->
+         <meta-data
+         android:name="com.google.android.maps.v2.API_KEY"
+         android:value="AIzaSyBNWa4GVsg3azfFLCfcqni17xHRPO9I678" />
+
+
+        <!-- Goolge API Relese Key -->
+   <!--     <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBU6UZVzw_I0jyxYDkSgoKeFHm9Nbuaqig" />-->
+    </application>
+
+</manifest>

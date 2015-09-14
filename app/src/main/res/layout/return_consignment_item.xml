@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_return_consignee"
+            style="@style/content_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:singleLine="true"/>
+
+        <nz.co.guruservices.mobilecourier.custom.ConsignmentItemView
+            android:id="@+id/consignment_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_return_consignment_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+</LinearLayout>

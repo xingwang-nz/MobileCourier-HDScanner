@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <nz.co.guruservices.mobilecourier.custom.ConsignmentDetailView
+        android:id="@+id/delivery_consignment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/container_horizontal_padding"
+        android:paddingRight="@dimen/container_horizontal_padding"
+        android:paddingStart="@dimen/container_horizontal_padding" />
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0f0f0" >
+
+        <Button
+            android:id="@+id/bnt_save_note"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Saven" >
+        </Button>
+
+        <EditText
+            android:id="@+id/delivery_consignment_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bnt_save_note"
+            android:layout_toStartOf="@id/bnt_save_note" >
+        </EditText>
+    </RelativeLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#e0f0f0"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <EditText
+            android:id="@+id/delivery_consignment_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="notes"
+            android:inputType="textMultiLine"
+            android:maxLength="99" >
+        </EditText>
+
+        <Button
+            android:id="@+id/bnt_save_note"
+            style="@style/button_text"
+            android:background="@drawable/button_green"
+            android:text="Save" />
+    </LinearLayout>
+
+</LinearLayout>

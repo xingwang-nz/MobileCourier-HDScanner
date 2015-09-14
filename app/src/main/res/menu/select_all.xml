@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/select_all"
+        android:actionViewClass="android.widget.CheckBox"
+        android:showAsAction="always"
+        android:title="@string/label_select_all"/>
+
+</menu>

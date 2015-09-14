@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center_vertical"
+    android:background="@drawable/list_group_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/text_return_consignment_category_name"
+        style="@style/content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/container_horizontal_padding"
+        android:paddingTop="2dp"
+        android:text="" />
+
+</LinearLayout>

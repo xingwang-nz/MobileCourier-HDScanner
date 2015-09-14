@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/container_horizontal_padding"
+        android:paddingRight="@dimen/container_horizontal_padding" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver: " />
+
+                <TextView
+                    android:id="@+id/summary_driver"
+                    style="@style/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <include layout="@layout/separator" />
+
+                <include layout="@layout/separator" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organisation: " />
+
+                <TextView
+                    android:id="@+id/summary_organisation"
+                    style="@style/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <include layout="@layout/separator" />
+
+                <include layout="@layout/separator" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area: " />
+
+                <TextView
+                    android:id="@+id/summary_area"
+                    style="@style/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left" >
+
+                <include layout="@layout/separator" />
+
+                <include layout="@layout/separator" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Consignments: " />
+
+                <TextView
+                    android:id="@+id/summary_my_consignment"
+                    style="@style/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <include layout="@layout/separator" />
+
+                <include layout="@layout/separator" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open Consignments: " />
+
+                <TextView
+                    android:id="@+id/summary_open_consignment"
+                    style="@style/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <include layout="@layout/separator" />
+
+                <include layout="@layout/separator" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loaded Consignments: " />
+
+                <TextView
+                    android:id="@+id/summary_loaded_consignment"
+                    style="@style/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <include layout="@layout/separator" />
+
+                <include layout="@layout/separator" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/main_footer"
+        style="@style/bottom_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:id="@+id/bnt_consignments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:image_button_icon="@drawable/ic_consignment"
+            custom:image_button_text="@string/label_consignments" >
+        </nz.co.guruservices.mobilecourier.custom.ImageButton>
+
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:id="@+id/bnt_deliver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:image_button_icon="@drawable/ic_deliver"
+            custom:image_button_text="@string/label_deliver" >
+        </nz.co.guruservices.mobilecourier.custom.ImageButton>
+
+        <nz.co.guruservices.mobilecourier.custom.ImageButton
+            android:id="@+id/bnt_returns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:image_button_icon="@drawable/ic_return_1"
+            custom:image_button_text="@string/label_return" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_group_selector"
+    android:orientation="horizontal"
+    android:padding="@dimen/container_horizontal_padding" >
+
+    <TextView
+        android:id="@+id/text_consignment_list_consignee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="start|center_vertical"
+        android:text=""
+        style="@style/content_title" />
+
+</RelativeLayout>

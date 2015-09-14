@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+
+        <!-- this is to remove actionbar icon left-padding -->
+        <!-- <item name="android:homeAsUpIndicator">@null</item> -->
+
+        
+        <!-- action bar title -->
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+
+        <!-- action bar tabs -->
+        <item name="android:actionBarTabBarStyle">@style/MyActionTabBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionTabStyle.TextStyle</item>
+        <!-- <item name="android:actionBarSize">40dp</item> -->
+
+        <!-- action bar menu TODO: not working-->
+        <!--  <item name="android:actionMenuTextAppearance">@style/MyActionMenuStyle.TextStyle</item>  -->
+    </style>
+
+    <!-- ActionBar Title -->
+    <style name="MyActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#333333</item>
+        <item name="android:titleTextStyle">@style/MyActionBar.TextStyle</item>
+    </style>
+
+    <style name="MyActionBar.TextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Tab -->
+    <style name="MyActionTabBarStyle" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:background">#b0b0b0</item>
+    </style>
+
+    <style name="MyActionTabStyle.TextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Menu -->
+    <style name="MyActionMenuStyle.TextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">#ff0000</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,30 @@
+<!-- this LinearLayout acts as a custom button, by applied android:background="?android:attr/selectableItemBackground" and onclick event -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/icon_custom_button"
+        android:layout_width="@dimen/image_button_image_width"
+        android:layout_height="@dimen/image_button_image_height"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_transparent" />
+
+    <TextView
+        android:id="@+id/text_custom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="@dimen/image_button_text_size" />
+
+</LinearLayout>

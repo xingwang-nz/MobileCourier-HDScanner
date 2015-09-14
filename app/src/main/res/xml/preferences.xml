@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Start Up" >
+        <nz.co.guruservices.mobilecourier.settings.CustomSwitchPreference
+            android:defaultValue="true"
+            android:key="prefDisplaySplashScreen"
+            android:title="Splash Screen" />
+        
+<!--         <nz.co.guruservices.mobilecourier.settings.CustomSwitchPreference -->
+<!--             android:defaultValue="false" -->
+<!--             android:key="prefEnableHdScanner" -->
+<!--             android:title="HD Scanner" /> -->
+        
+    </PreferenceCategory>
+    <!--
+    <PreferenceCategory android:title="Language" >
+        <ListPreference
+            android:entries="@array/listLanguage"
+            android:entryValues="@array/listLanguageCode"
+            android:key="prefLanguage"
+            android:title="Select Language" 
+            android:defaultValue="ENG"/>
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>

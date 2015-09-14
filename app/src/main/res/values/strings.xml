@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile Courier 2</string>
+    <string name="company_name">\@Copyright Guru Services Ltd</string>
+
+    <!-- Menu Item Strings -->
+    <string name="action_about">About</string>
+
+    <!-- labels -->
+    <string name="label_home">Home</string>
+    <string name="label_consignments">Consignments</string>
+    <string name="label_deliver">Deliver</string>
+    <string name="label_deliver_consignee">Deliver/Consignee</string>
+    <string name="label_return">Return</string>
+    <string name="label_consignment_detail">Consignment Detail</string>
+    <string name="label_consignment_note">Consignment Note</string>
+    <string name="label_driver_id">Driver ID</string>
+    <string name="label_password">Password</string>
+    <string name="label_login">Login</string>
+    <string name="label_my_consignment_tab">My Cons</string>
+    <string name="label_open_consignment_tab">Open</string>
+    <string name="label_loaded_consignment_tab">Loaded</string>
+    <string name="label_deliver_leave_card">Leave a Card</string>
+    <string name="label_notes">Notes: </string>
+    <string name="label_print_name">Print Name: </string>
+    <string name="label_about">About</string>
+    <string name="label_help">Help</string>
+    <string name="label_setting">Settings</string>
+    
+    <string-array name="label_consignment_tabs">
+        <item>@string/label_my_consignment_tab</item>
+        <item>@string/label_open_consignment_tab</item>
+        <item>@string/label_loaded_consignment_tab</item>
+    </string-array>
+
+    
+    <string name="label_deliver_tab">Deliver</string>
+    <string name="label_deliver_leave_card_tab">Leave a Card</string>
+    
+    <string-array name="label_deliver_tabs">
+        <item>@string/label_deliver_tab</item>
+        <item>@string/label_deliver_leave_card_tab</item>
+    </string-array>
+    
+    
+    <string name="label_select_all">Select All</string>
+
+    <!-- custom button label strings -->
+    <string name="label_load">Load</string>
+    <string name="label_scan">Scan</string>
+    <string name="label_decline">Decline</string>
+    <string name="label_take">Take</string>
+    <string name="label_unload">Unload</string>
+    
+    <!-- delivery radio button lable -->
+    <string name="label_delivery_type">Type:</string>
+    <string name="label_delivery_type_store">Store</string>
+    <string name="label_delivery_type_home">Home</string>
+    <string name="label_delivery_type_rural">Rural</string>
+    
+
+</resources>
