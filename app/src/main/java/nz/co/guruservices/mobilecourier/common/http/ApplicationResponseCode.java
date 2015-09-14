@@ -5,10 +5,9 @@ import java.util.Map;
 
 /**
  * The application response codes, these codes are NOT the standard http codes
- *
- *
  */
 public enum ApplicationResponseCode {
+
     UN_KNOWN(0, "Unknown"),
     SUCCESS(2000, "Success"),
 
@@ -39,26 +38,26 @@ public enum ApplicationResponseCode {
     private static final Map<Integer, ApplicationResponseCode> map = new HashMap<Integer, ApplicationResponseCode>();
 
     static {
-	for (final ApplicationResponseCode responseCode : ApplicationResponseCode.values()) {
-	    map.put(responseCode.getCode(), responseCode);
-	}
+        for (final ApplicationResponseCode responseCode : ApplicationResponseCode.values()) {
+            map.put(responseCode.getCode(), responseCode);
+        }
     }
 
     private ApplicationResponseCode(final int code, final String description) {
-	this.code = code;
-	this.description = description;
+        this.code = code;
+        this.description = description;
     }
 
     public int getCode() {
-	return code;
+        return code;
     }
 
     public String getDescription() {
-	return description;
+        return description;
     }
 
     public static ApplicationResponseCode valueOfCode(final int code) {
-	final ApplicationResponseCode applicationResponseCode = map.get(code);
-	return applicationResponseCode != null ? applicationResponseCode : UN_KNOWN;
+        final ApplicationResponseCode applicationResponseCode = map.get(code);
+        return applicationResponseCode != null ? applicationResponseCode : UN_KNOWN;
     }
 }
